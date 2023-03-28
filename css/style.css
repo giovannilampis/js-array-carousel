@@ -11,3 +11,17 @@
 .debug {
     border: 1px solid red;
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid turquoise;
+}
+
+.item.active {
+    display: block;
+}
+
+.item {
+    display: none;
+}
