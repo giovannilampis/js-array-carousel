@@ -12,6 +12,10 @@
     border: 1px solid red;
 }
 
+img {
+    width: 100%;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -24,9 +28,12 @@
 
 .item {
     display: none;
+    width: 40rem;
+    height: 20rem;
 }
 
 .next,
 .prev {
     font-size: 3rem;
+    cursor: pointer;
 }
