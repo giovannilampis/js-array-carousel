@@ -12,25 +12,44 @@ const prev = document.querySelector(".prev");
 
 const next = document.querySelector(".next");
 
+// create an array containing the images' names
+
 const images = ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp",];
+
+// INSERT DINAMICALLY in HTML the .item classed elements that contain the images
 
 for ( let i = 0; i < images.length; i++ ) {
 
+    // create element
+
     let item = document.createElement("div");
+
+    // the item element will contain ...
 
     item.innerHTML = `
         <img src="./images/${images[i]}" alt="superheroes">
     `;
+
     console.log(item);
 
+    // append the item element to items
+
     items.append(item);
+
+    // give the item element the class ".item"
 
     item.classList.add('item');
 }
 
+// add class .active to the first .item classed element
+
 document.querySelector(".item").classList.add("active");
 
+// add class .first to the first .item classed element
+
 document.querySelector(".item").classList.add("first");
+
+// add class .last to the last .item classed element
 
 const elementsItem = document.querySelectorAll(".item");
 
