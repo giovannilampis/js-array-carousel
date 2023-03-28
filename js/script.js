@@ -12,22 +12,25 @@ const prev = document.querySelector(".prev");
 
 const next = document.querySelector(".next");
 
-for ( let i = 1; i < 6; i++ ) {
+const images = ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp",];
+
+for ( let i = 0; i < images.length; i++ ) {
 
     let item = document.createElement("div");
 
     item.innerHTML = `
-        <img src="./images/0${i}.webp" alt="superheroes">
+        <img src="./images/${images[i]}" alt="superheroes">
     `;
+    console.log(item);
 
     items.append(item);
 
     item.classList.add('item');
 }
 
-document.querySelector(".item").classList.add(".active");
+document.querySelector(".item").classList.add("active");
 
-document.querySelector(".item").classList.add(".first");
+document.querySelector(".item").classList.add("first");
 
 const elementsItem = document.querySelectorAll(".item");
 
