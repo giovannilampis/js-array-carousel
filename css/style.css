@@ -13,12 +13,14 @@
 }
 
 img {
-    width: 100%;
+    width: 75rem;
+    height: 55rem;
+    object-fit: cover;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 4rem auto;
     border: 1px solid turquoise;
 }
 
@@ -28,8 +30,7 @@ img {
 
 .item {
     display: none;
-    width: 40rem;
-    height: 20rem;
+
 }
 
 .next,
