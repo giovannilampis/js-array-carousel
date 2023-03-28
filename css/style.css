@@ -25,3 +25,8 @@
 .item {
     display: none;
 }
+
+.next,
+.prev {
+    font-size: 3rem;
+}
