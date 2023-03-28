@@ -24,4 +24,8 @@ next.addEventListener("click", function() {
 
     activeItem.classList.remove("active");
 
+    // add .active class to the following img element
+
+    itemToActive.classList.add("active");
+
 })
